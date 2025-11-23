@@ -3,14 +3,15 @@ import ProductCard from "./ProductCard";
 
 const ProductGrid = ({ products }) => {
   const clothes = products.filter(
-    (p) => p.category?.name === "clothes"
+    (p) => p.category?.name === "Clothes"
   );
   const electronics = products.filter(
-    (p) => p.category?.name === "Electronics"
+    (p) => p.category?.name === "Miscellaneous"
   );
   const furnitures = products.filter(
     (p) => p.category?.name === "Furniture"
   );
+  console.log(clothes, 'cloths');
 
   return (
     <div className="m-4 p-4">
@@ -32,7 +33,7 @@ const ProductGrid = ({ products }) => {
       {electronics.length > 0 && (
         <>
           <h1 className="text-2xl font-bold text-center text-white uppercase p-2 mt-4 mb-4">
-            Electronics
+            Miscellaneous
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

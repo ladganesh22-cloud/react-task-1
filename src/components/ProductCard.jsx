@@ -10,21 +10,9 @@ const ProductCard = ({ product }) => {
 
         <img
           src={product.images?.[0]}
-          className="w-full h-48 object-cover rounded transition-all duration-500 group-hover:blur-sm"
+          className="w-full h-48 object-cover rounded"
           alt={product.title}
         />
-        <div className="
-          absolute inset-0
-          bg-opacity-60
-          opacity-0
-          flex justify-center items-center
-          transition-all duration-500
-          group-hover:opacity-100
-        ">
-          <p className="text-white text-xl font-bold">
-            ₹{product.price}
-          </p>
-        </div>
         <h3 className="text-sm items-center flex justify-center font-semibold mt-3 text-white">{product.title}</h3>
         <p className="text-sm mt-2 text-white">
           {product.description.substring(0, 100)}...
