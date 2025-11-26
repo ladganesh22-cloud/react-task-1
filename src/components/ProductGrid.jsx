@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 const ProductGrid = ({ products }) => {
   const clothes = products.filter(
-    (p) => p.category?.name === "Clothes"
+    (p) => p.category?.name === "Clothes" || p.category?.name === "Cloth" || p.category?.name === "Clothe"
   );
   const electronics = products.filter(
     (p) => p.category?.name === "Miscellaneous"
