@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ProductGrid from './components/ProductGrid';
+import DemartColumn from './components/DemartColumn';
 import useFetchProducts from './Hooks/useFetchProducts';
 
 
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className='bg-black'>
-      <ProductGrid products={data} />
+      <DemartColumn dmartData={data} />
     </div>
   )
 
